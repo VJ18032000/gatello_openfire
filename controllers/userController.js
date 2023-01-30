@@ -11,7 +11,7 @@ const register = (req, res, next) => {
     }
     axios.post("http://app.gatello.com:9090/plugins/restapi/v1/users", params, {
         headers: {
-            'Authorization': 'fih6cj957mHWEcQk',
+            'Authorization': '',
             'Content-Type': 'application/json'
         }
     }).then((response) => {
@@ -437,7 +437,7 @@ const deleteUser = (req, res, next) => {
     const username = req.body.username
     axios.delete(`http://app.gatello.com:9090/plugins/restapi/v1/users/${username}`, {
         headers: {
-            'Authorization': 'fih6cj957mHWEcQk',
+            'Authorization': '',
             'Content-Type': 'application/json'
         }
     }).then((response) => {
@@ -498,7 +498,7 @@ const group = (req, res, next) => {
 
     axios.post("http://app.gatello.com:9090/plugins/restapi/v1/groups", params, {
         headers: {
-            'Authorization': 'fih6cj957mHWEcQk',
+            'Authorization': '',
             'Content-Type': 'application/json'
         }
     }).then((response) => {
@@ -517,7 +517,7 @@ const room=(req,res,next)=>{
 
     axios.post("http://app.gatello.com:9090/plugins/restapi/v1/chatrooms", params, {
         headers: {
-            'Authorization': 'fih6cj957mHWEcQk',
+            'Authorization': '',
             'Content-Type': 'application/json'
         }
     }).then((response) => {
